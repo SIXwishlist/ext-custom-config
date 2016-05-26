@@ -1,0 +1,21 @@
+<?php
+// Copyright 1999-2016. Parallels IP Holdings GmbH.
+?>
+<p>Example of extension settings. Default values are shown by default.</p>
+
+<ul>
+    <li>Home page: <b><?= $this->homepage; ?></b></li>
+    <li>Timeout setting: <b><?= $this->timeout; ?></b></li>
+    <li>Undefined setting: <b><?= var_export($this->undefined, true); ?></b></li>
+</ul>
+
+<p>
+    It is possible to override the settings using panel.ini config file (use "plesk conf panel.ini" for editing).
+    Put the following content at the bottom of panel.ini file (where "custom-config" is an ID of extension):
+</p>
+
+<pre>
+[ext-custom-config]
+homepage = "http://another-url.com"
+timeout = 300
+</pre>
