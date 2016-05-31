@@ -5,7 +5,8 @@
   <name>Custom Config Settings Example</name>
   <description>Demonstrates how to expose extension settings via panel.ini config file.</description>
   <version>1.0</version>
-  <release>0</release>
+  <release>1</release>
   <vendor>Plesk</vendor>
+  <url>https://github.com/plesk/ext-custom-config</url>
   <plesk_min_version>17.0.13</plesk_min_version>
 </module>
